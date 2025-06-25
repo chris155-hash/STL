@@ -1,7 +1,7 @@
 //手写简化版本的的STL里的list    基于双向链表的数据结构
 //List与基于数组的std::vector相比不同，插入和删除的时间复杂度都为O(1)，效率更高，所以更适用于频繁插入和删除的操作。
 
-//Listing具有的函数等：
+//List具有的函数等：
 //1、基本成员函数： 构造函数：初始化List节点；析构函数：结束后释放资源，防止内存泄漏。    
 //为什么不需要拷贝构造、拷贝构造运算符？：list一般不需要去拷贝新的list，所以不需要特地写。
 // 2.成员函数： push_back/push_front、pop_back/pop_front、empty、clear、size、find、remove、get
