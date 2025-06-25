@@ -33,7 +33,7 @@ public:
         frontIndex = (frontIndex - 1 + capacity) % capacity;
         size ++;
     }
-    // deque高效的关键就在于首尾相接，比如说队头进行pop，只需让front后移一位，而不用证段数组前移。灵魂即： 真正用于构建队列的元素只有夹在头尾指针之间的元素。
+    // deque高效的关键就在于首尾相接，比如说队头进行pop，只需让front后移一位，而不用整段数组前移。灵魂即： 真正用于构建队列的元素只有夹在头尾指针之间的元素。
 
     void pop_back(){
         if (size == 0) throw std::out_of_range("Deque is empty");
